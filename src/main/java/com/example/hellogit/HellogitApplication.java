@@ -1,4 +1,4 @@
-package com.example.hellocd;
+package com.example.hellogit;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
@@ -7,7 +7,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HellocdApplication {
+@RestController
+@EnableAutoConfiguration
+public class HellogitApplication {
 
 
 	@RequestMapping("/")
@@ -16,7 +18,7 @@ public class HellocdApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(HellocdApplication.class, args);
+		SpringApplication.run(HellogitApplication.class, args);
 	}
 
 }
